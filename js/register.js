@@ -11,6 +11,7 @@ const form = document.getElementById('form');
 const button = document.getElementById('button');
 const moon = document.getElementById('moon');
 const body1 = document.getElementById('body1');
+const h1 = document.getElementById('h1')
 
 button &&  button.addEventListener('click', function(e) {
     e.preventDefault();
@@ -43,5 +44,10 @@ moon && moon.addEventListener('click', function(e) {
     e.preventDefault();
 
     body1.style.backgroundColor = 'black'
-    
+    h1.style.color = 'white'
+
+    form.style.backgroundColor = 'black'
+
+    name.style.color = 'white'
+
 })

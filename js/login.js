@@ -5,6 +5,9 @@ const password = document.getElementById('password');
 const button = document.getElementById('button');
 const error = document.getElementById("error")
 const form = document.getElementById('form');
+const moon = document.getElementById('moon');
+const body1 = document.getElementById('body1');
+const h1 = document.getElementById('h1')
 
 button &&  button.addEventListener('click', function(e) {
     e.preventDefault();
@@ -30,3 +33,14 @@ button &&  button.addEventListener('click', function(e) {
         }
     };
 });
+
+
+moon && moon.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    body1.style.backgroundColor = 'black'
+    h1.style.color = 'white'
+
+    form.style.backgroundColor = 'black'
+
+})

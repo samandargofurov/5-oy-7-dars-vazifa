@@ -34,7 +34,6 @@ button &&  button.addEventListener('click', function(e) {
     };
 });
 
-
 moon && moon.addEventListener('click', function(e) {
     e.preventDefault();
 

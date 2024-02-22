@@ -64,6 +64,7 @@ function validateRegister(name, surname, age, email, username, password, repassw
     if (username.value.trim().length <= 3) {
         alert("Username is empty");
         username.focus();
+        username.outlineColor = 'red'
         return false;
     }
 
@@ -100,6 +101,23 @@ function validateRegister(name, surname, age, email, username, password, repassw
     return true;
 }
 
+function validateLogin(username, password) {
+    if (username.value.trim().length <= 3) {
+        alert("Username is empty");
+        username.focus();
+        return false;
+    }
+
+    if (password.value.trim().length <= 3) {
+        alert("Password is empty");
+        password.focus();
+        return false;
+    }
+
+
+    return true;
+}
+
 function getData() {
     let data = [];
 
@@ -110,4 +128,4 @@ function getData() {
     return data
 }
 
-export { validateRegister, getData};
+export { validateRegister, getData, validateLogin};

@@ -47,7 +47,4 @@ moon && moon.addEventListener('click', function(e) {
     h1.style.color = 'white'
 
     form.style.backgroundColor = 'black'
-
-    name.style.color = 'white'
-
 })

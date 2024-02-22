@@ -64,7 +64,6 @@ function validateRegister(name, surname, age, email, username, password, repassw
     if (username.value.trim().length <= 3) {
         alert("Username is empty");
         username.focus();
-        username.outlineColor = 'red'
         return false;
     }
 

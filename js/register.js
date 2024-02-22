@@ -9,6 +9,8 @@ const password = document.getElementById('password');
 const repassword = document.getElementById('repassword');
 const form = document.getElementById('form');
 const button = document.getElementById('button');
+const moon = document.getElementById('moon');
+const body1 = document.getElementById('body1');
 
 button &&  button.addEventListener('click', function(e) {
     e.preventDefault();
@@ -35,4 +37,11 @@ button &&  button.addEventListener('click', function(e) {
         let baseUrl = window.location.href.substring(0, index);
         window.location.assign(`${baseUrl}/pages/login.html`);
     }
+});
+
+moon && moon.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    body1.style.backgroundColor = 'black'
+    
 })

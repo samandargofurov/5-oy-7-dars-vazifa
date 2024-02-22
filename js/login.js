@@ -28,5 +28,5 @@ button &&  button.addEventListener('click', function(e) {
             error.classList = `d-block text-danger`;
             error.innerHTML = 'The password or username was entered incorrectly'
         }
-    }
+    };
 });

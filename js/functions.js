@@ -98,7 +98,7 @@ function validateRegister(name, surname, age, email, username, password, repassw
     }
 
     return true;
-}
+};
 
 function validateLogin(username, password) {
     if (username.value.trim().length <= 3) {
@@ -115,7 +115,7 @@ function validateLogin(username, password) {
 
 
     return true;
-}
+};
 
 function getData() {
     let data = [];
@@ -125,6 +125,6 @@ function getData() {
     }
 
     return data
-}
+};
 
 export { validateRegister, getData, validateLogin};

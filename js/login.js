@@ -21,6 +21,8 @@ button &&  button.addEventListener('click', function(e) {
             let fullUrl = window.location.href
             let index = fullUrl.search('/pages');
             let baseUrl = fullUrl.substring(0, index);
+
+            localStorage.setItem('activeUser', username.value);
             window.location.assign(`${baseUrl}/index.html`);
         } else {
             error.classList = `d-block text-danger`;

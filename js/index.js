@@ -1,4 +1,4 @@
-import { getData } from "./functions,js";
+import { getData } from "./functions.js";
 
 const name = document.getElementById('name');
 const surname = document.getElementById('surname');
